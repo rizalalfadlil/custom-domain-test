@@ -91,10 +91,9 @@ function App() {
     };
   }, []);
 
-  const [showHead, setShowHead] = useState(true)
+  const [showHead, setShowHead] = useState(false)
   return (
     <div className="App bg-gradient-to-r from-blue-900 to-slate-800">
-      <div className='pb-8 bg-slate-800/40'></div>
       <header className='sticky top-0 grid md:grid-cols-2 z-10 border-b border-blue-300/20 items-center backdrop-blur-md bg-slate-800/40'>
     <div className='text-start md:text-start p-4 uppercase tracking-wide h-fit text-md md:text-xl content-center font-medium md:font-semibold text-blue-200  '> {/* top left content */}
           <div className='hidden md:block'>

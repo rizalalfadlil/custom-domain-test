@@ -14,7 +14,7 @@ export const ProjectCard = (props) => {
           <span className='text-white bg-sky-400 p-2 text-xs rounded me-2 bg-opacity-20'>{fw}</span>
           <span className='text-white bg-sky-400 p-2 text-xs rounded me-2 bg-opacity-20'>{pf}</span>
         </div>
-        <p className='p-4 text-blue-300 text-lg border-slate-600 bg-opacity-10 h-64 overflow-y-scroll'>{desc}</p>
+        <p className='p-4 text-blue-300 text-lg border-slate-600 bg-opacity-10 h-24 md:h-64 overflow-y-scroll'>{desc}</p>
         <div className='grid grid-cols-2 border-slate-600 rounded-b-xl w-full'>
           <a href={page} className='p-4 text-lg text-center font-medium text-blue-200 hover:bg-blue-500 hover:bg-opacity-10 hover:rounded-bl-xl border-slate-600'>
             {page?(<PlayArrowRounded />):(<Circle/>)}

@@ -13,14 +13,14 @@ export const Project = (props) => {
       <p className='text-blue-300 text-lg md:text-2xl'>semua projek yang saya buat yang berisi dari tugas ketika sekolah, pkl dan pribadi</p>
       </>)
   return (
-    <section className='h-screen md:p-8'>
+    <section className='h-screen md:p-8 pb-8'>
         <div className='p-8 h-1/5 grid content-center'>
           {lang === 'id'? idTitle : enTitle}
         </div>
-        <div className='bg-opacity-30 relative rounded-xl '>
+        <div className='bg-opacity-30 relative h-4/5 rounded-xl '>
           <div className='absolute h-full w-16 bg-gradient-to-r from-slate-900'></div>
           <div className='absolute h-full w-16 bg-gradient-to-l right-0 from-slate-900'></div>
-           <div className='h-full md:h-4/5 md:h-4/5 shadow-inner flex gap-10 p-10 overflow-y-hidden overflow-x-scroll'>
+           <div className='shadow-inner h-full flex gap-10 p-10 overflow-y-hidden overflow-x-scroll'>
            <ProjectCard 
             title='Undefeatable TicTacToe' 
             repo='https://github.com/rizalalfadlil/undefeatable-tictactoe/' 
