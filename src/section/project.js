@@ -13,7 +13,7 @@ export const Project = (props) => {
       <p className='text-blue-300 text-lg md:text-2xl'>semua projek yang saya buat yang berisi dari tugas ketika sekolah, pkl dan pribadi</p>
       </>)
   return (
-    <section className='h-screen md:p-8 pb-8'>
+    <section className='h-auto md:p-8 pb-8'>
         <div className='p-8 pt-16 md:pt-8 h-1/5 grid content-center'>
           {lang === 'id'? idTitle : enTitle}
         </div>

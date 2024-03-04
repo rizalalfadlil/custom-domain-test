@@ -27,11 +27,11 @@ const SkillPage = (props) => {
             {lang ==='id'? idTitle:enTitle}
           </div>
         </div>
-        <div className='h-screen bg-slate-900 justify-items-center md:items-center grid'>
+        <div className='h-auto bg-slate-900 justify-items-center md:items-center grid'>
           <div className=' 2xl:w-3/4 lg:w-full w-5/6 h-5/6 md:h-2/3'>
             <p className='font-medium tracking-wide font-xl text-sky-200 rounded-lg p-3 bg-slate-600 bg-opacity-20'><span className='align-middle me-3'>{lang === 'id'? 'Tampilkan yang tidak relevan':'Show irrelevant'}</span>
             <span onClick={changeShow}>{showAll ? (<CheckBox/>) : (<CheckBoxOutlineBlank/>)}</span></p>
-          <div className='relative h-1/2 sm:h-3/4 lg:h-full'>
+          <div className='relative h-2/3 sm:h-3/4 lg:h-full'>
             <div className='absolute w-full h-16 bg-gradient-to-b from-slate-900 top-0'></div>
             <div className='absolute w-full h-16 bg-gradient-to-t from-slate-900 bottom-0'></div>
           <div className='rounded-xl  overflow-y-scroll h-full overflow-x-hidden bg-opacity-20 grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 p-4 mt-8 gap-6 '>
