@@ -93,14 +93,14 @@ function App() {
 
   const [showHead, setShowHead] = useState(false)
   return (
-    <div className="App bg-gradient-to-r from-blue-900 to-slate-800">
+    <div className="App bg-slate-900">
       <header className='sticky top-0 grid lg:grid-cols-2 z-50 border-b border-blue-300/20 items-center backdrop-blur-md bg-slate-800/40'>
     <div className='text-start lg:text-start p-4 uppercase tracking-wide h-fit text-md content-center font-medium lg:font-semibold text-blue-200  '> {/* top left content */}
           <div className='hidden lg:block'>
-          <span href='#' onClick={goHome} className={`lg:mx-3 p-2 hover:text-white cursor-pointer ${currentPage === 'home' && 'text-blue-400'}`}>{h}</span>
-          <span href='#' onClick={goProject} className={`lg:mx-3 p-2 hover:text-white cursor-pointer ${currentPage === 'project' && 'text-blue-400'}`}>{p}</span>
-          <span href='#' onClick={goSkill} className={`lg:mx-3 p-2 hover:text-white cursor-pointer ${currentPage === 'skill' && 'text-blue-400'}`}>{s}</span>
-          <span href='#' onClick={goAbout} className={`lg:mx-3 p-2 hover:text-white cursor-pointer ${currentPage === 'about' && 'text-blue-400'}`}>{a}</span>
+          <span href='#' onClick={goHome} className={`lg:mx-1 p-2 hover:text-white cursor-pointer ${currentPage === 'home' && 'text-blue-400'}`}>{h}</span>
+          <span href='#' onClick={goProject} className={`lg:mx-1 p-2 hover:text-white cursor-pointer ${currentPage === 'project' && 'text-blue-400'}`}>{p}</span>
+          <span href='#' onClick={goSkill} className={`lg:mx-1 p-2 hover:text-white cursor-pointer ${currentPage === 'skill' && 'text-blue-400'}`}>{s}</span>
+          <span href='#' onClick={goAbout} className={`lg:mx-1 p-2 hover:text-white cursor-pointer ${currentPage === 'about' && 'text-blue-400'}`}>{a}</span>
           </div>
           <div className='block lg:hidden'>
           <div className='flex justify-between'>

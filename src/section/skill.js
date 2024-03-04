@@ -21,7 +21,7 @@ const SkillPage = (props) => {
             </>
   )
   return (
-    <section className='h-lvh h-full bg-slate-900 grid md:grid-cols-2'>
+    <section className='h-lvh h-fit mb-48 sm:mb-0 md:h-full bg-slate-900 grid md:grid-cols-2'>
         <div className='md:h-screen bg-slate-900 justify-items-center items-center grid'>
           <div className='w-4/5 xl:w-1/2'>
             {lang ==='id'? idTitle:enTitle}

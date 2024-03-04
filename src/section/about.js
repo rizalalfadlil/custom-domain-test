@@ -8,9 +8,9 @@ export const About = (props) => {
    const d = lang === 'id'?'Seorang Siswa SMK kelas 12 jurusan rekayasa perangkat lunak yang suka membuat game menggunakan unity dan membuat halaman web front-end menggunakan react.js'
    :'A 3rd grade vocational school student majoring in software engineering who likes making games using Unity and creating front-end web pages using React.js'
   return (
-    <section className='lg:h-auto bg-slate-900 grid lg:grid-cols-2 lg:p-8'>
+    <section className='lg:h-auto mb-20 bg-slate-900 grid lg:grid-cols-2 lg:p-8'>
       <div className='flex justify-center items-center content-center pb-4 h-full'>
-        <div className='w-4/5 xl:w-3/5 shadow-xl rounded-xl h-36 lg:h-3/5 h-600 bg-no-repeat bg-center bg-cover' style={{ backgroundImage: "url('./bg.webp')" }}></div>
+        <div className='w-4/5 xl:w-3/5 z-30 shadow-xl rounded-xl h-36 lg:h-4/5 h-600 bg-no-repeat bg-center bg-cover' style={{ backgroundImage: "url('./bg.webp')" }}></div>
       </div>
       <div className='h-fit lg:h-full grid'>
         <div className='justify-center justify-self-center self-end grid content-center w-4/5 lg:w-2/3'>
