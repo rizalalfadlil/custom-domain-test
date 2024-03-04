@@ -8,7 +8,7 @@ export const ProjectCard = (props) => {
     return (
       <div className='rounded-xl bg-slate-800 bg-opacity-50 h-fit shadow-xl min-w-80 md:min-w-96'>
         <p className='text-blue-200 p-4 py-6 text-2xl font-medium rounded-t-xl border-slate-600'>{title}</p>
-        <div style={{backgroundImage:`url(${image})`}} className='border-slate-600 bg-contain bg-no-repeat border border-slate-400/10 bg-center rounded-md h-40 mx-4'></div>
+        <div style={{backgroundImage:`url(${image})`}} className='border-slate-600 bg-contain bg-no-repeat border border-slate-400/10 bg-center rounded-md h-64 mx-4'></div>
         <div className='p-4 uppercase tracking-wide'>
           <span className='text-white bg-sky-400 p-2 text-xs rounded me-2 bg-opacity-20'>{plg}</span>
           <span className='text-white bg-sky-400 p-2 text-xs rounded me-2 bg-opacity-20'>{fw}</span>
