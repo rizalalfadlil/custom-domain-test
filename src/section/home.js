@@ -9,8 +9,8 @@ export const Home = (props) => {
     <section className='md:h-screen md:p-8 grid md:grid-cols-2 top-0'>
         <div className='grid content-center h-fit md:h-full'>{/* half screen size div */}
           <div className='text-start justify-self-center text-lg md:text-2xl p-8 md:p-0 md:w-2/3'>
-            <p className='text-blue-400 font-medium uppercase tracking-widest text-start md:text-start'>portofolio</p>
-            <p className='text-slate-200 font-bold text-4xl lg:text-7xl mb-4'>{n} <span className="text-sky-300">RizalAlfadlil</span></p>
+            <p className='text-blue-400 font-medium uppercase tracking-widest text-start md:text-start'>port{lang ==='id' && 'o'}folio</p>
+            <p className='text-slate-200 font-bold text-4xl lg:text-7xl mb-4'>{n} <span className="text-sky-300">Hafidz Rizal <span className=' text-nowrap'>Al-Fadlil</span></span></p>
             <p className='text-blue-300 font-medium text-md lg:text-2xl mb-8'>{d}.</p>
             {/* <button className="transition shadow-md border-blue-400 bg-gradient-to-r from-sky-400 to-cyan-600 p-2 md:p-4 text-2xl mt-8 rounded-lg font-semibold text-white hover:bg-gradient-to-r hover:from-sky-600 hover:to-cyan-800 hover:text-white items-center">
               <span className="me-4">Scroll down to read more</span><ArrowDownwardRounded/></button> */}
