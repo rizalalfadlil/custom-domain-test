@@ -1,7 +1,7 @@
 import { StarBorder, StarRate } from "@mui/icons-material";
 
 export const Skill = (props) => {
-    const { lang, frame, title, level, hidden } = props;
+    const { lang, icon, title, level, hidden } = props;
     const renderStars = (level) => {
       const stars = [];
       const maxStars = 4;
@@ -29,14 +29,9 @@ export const Skill = (props) => {
     }
     if(!hidden){
       return (
-        <div className='rounded-xl shadow-xl p-4 bg-slate-600 hover:bg-opacity-50 bg-opacity-20 grid xl:h-80 w-full'>
-          <img width="32" height="32" src={lang} alt="Language Icon" className="bg-blue-300 bg-opacity-20 p-1 rounded-lg" />
-          <img width="96" height="96" className='justify-self-center h-fit ' src={frame} alt="Frame Icon"/>
-          <div className='mt-3 mb-3 grid w-full items-center xl:grid-cols-2 text-yellow-200 '>
-            <span className="hidden xl:block">{renderStars(level)}</span>
-            <SkillLevel/>
-          </div>
-          <p className='text-xs xl:text-md text-justify xl:font-medium tracking-wide text-blue-200'>{title}</p>
+        <div className='rounded-xl shadow-xl p-4 bg-slate-600 hover:bg-opacity-50 bg-opacity-20 w-full flex items-center gap-4'>
+          <div><img src={icon} width={36} alt="" /></div>
+          <span className=' xl:font-medium tracking-wide text-blue-200'>{title}</span>
         </div>
       );
     }else return null

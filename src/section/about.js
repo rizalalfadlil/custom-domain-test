@@ -2,6 +2,8 @@ import React from 'react'
 
 export const About = (props) => {
   const { lang } = props
+  const date = new Date()
+  const year = date.getFullYear()
    const enTitle = (<p className='text-blue-300 text-2xl lg:text-5xl font-bold mt-3'>About <span className='text-white'>Me</span></p>) 
    const idTitle = (<p className='text-blue-300 text-2xl lg:text-5xl font-bold mt-3'>Tentang <span className='text-white'>Saya</span></p>) 
 
@@ -10,14 +12,14 @@ export const About = (props) => {
   return (
     <section className='lg:h-auto mb-20 bg-slate-900 grid lg:grid-cols-2 lg:p-8'>
       <div className='flex justify-center items-center content-center pb-4 h-full'>
-        <div className='w-4/5 xl:w-3/5 z-30 shadow-xl rounded-xl h-36 lg:h-4/5 h-600 bg-no-repeat bg-center bg-cover' style={{ backgroundImage: "url('./bg.webp')" }}></div>
+        <div className='w-4/5 xl:w-3/5 z-30 shadow-xl rounded-xl h-36 lg:h-4/5 h-600 bg-no-repeat bg-center bg-cover' style={{ backgroundImage: "url('https://raw.githubusercontent.com/rizalalfadlil/page/master/public/bg.webp')" }}></div>
       </div>
       <div className='h-fit lg:h-full grid'>
         <div className='justify-center justify-self-center self-end grid content-center w-4/5 lg:w-2/3'>
           {lang === 'id'? idTitle:enTitle}
           <p className='font-bold tracking-widest uppercase lg:mt-3 text-slate-500 text-xs my-2 lg:my-0 lg:text-md'>Hafidz Rizal Al-Fadlil</p>
           <p className='lg:my-2'>
-          <span className='tracking-wide p-0.5 lg:p-1 text-xs lg:text-sm font-semibold rounded bg-sky-200/60 w-fit'>18 {lang==='id'?'Tahun':'Years Old'}</span>
+          <span className='tracking-wide p-0.5 lg:p-1 text-xs lg:text-sm font-semibold rounded bg-sky-200/60 w-fit'>{year - 2005} {lang==='id'?'Tahun':'Years Old'}</span>
           <span className='tracking-wide p-0.5 lg:p-1 text-xs lg:text-sm font-semibold rounded bg-sky-200/60 ms-2 w-fit'>{lang==='id'?'Laki-Laki':'Male'}</span>
           </p>
           <p className='text-blue-200 tracking-wide text-sm lg:text-lg my-4 lg:my-0'>{d}</p>
